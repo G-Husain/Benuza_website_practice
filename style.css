@@ -455,8 +455,15 @@ animation: myAnimation_2 4s ease-in-out 0s infinite alternate;
     /* border: 2px solid black; */
     width:  100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     column-gap: 90px;
+}
+
+@media (max-width: 480px){
+    .brand_container {
+    gap: 38px;
+}
 }
 
 /* =====brand css is end here===== */
@@ -539,7 +546,7 @@ animation: myAnimation_2 4s ease-in-out 0s infinite alternate;
     padding: 7px 20px 7px 20px;
     border-radius:15px ;
     border: none;
-    background-color: rgba(107, 167, 167,0.1);
+    background-color: rgba(164, 241, 241, 0.1);
 }
 
 #service_child2 button a{
@@ -557,6 +564,7 @@ animation: myAnimation_2 4s ease-in-out 0s infinite alternate;
     flex-direction: column;
     padding: 10px;
 }    
+
 }
 
 /* ====demand css is END here */
