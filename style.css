@@ -272,7 +272,7 @@ animation: myAnimation_2 4s ease-in-out 0s infinite alternate;
 }
 
 #inner_child1{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* max-width: 280px; */
     height: 100%;
 }
@@ -430,6 +430,10 @@ animation: myAnimation_2 4s ease-in-out 0s infinite alternate;
 #child2_innerChild3 {
     margin-top: 26px;
     margin-left: 10px;
+}
+#child2_innerChild3 #icon {
+    flex-direction: column;
+    gap: 10px;
 }
 
 
@@ -1317,18 +1321,20 @@ font-size: small;
 }
 .pp1_img{
     /* border: 2px solid green; */
-    width: 90px;
-   height: 90px;
+    width: 80px;
+   height: 80px;
    border-radius: 50%;
 }
 .pp1_img img{
     width: 100%;
     height: 100%;
+    border-radius: 50%;
 }
 .pp1_des{
 /* border: 2px solid white; */
 text-align: left;
 color: white;
+padding-left: 10px;
 }
 
 #Contact_me{
@@ -1346,9 +1352,7 @@ color: white;
     margin-top: 44px;
     gap: 20px;
 }
-.pp1_des {
-    padding-left: 10px;
-}
+
 
 .sameBox_about{
     align-items: center;
