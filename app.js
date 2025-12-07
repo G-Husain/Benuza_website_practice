@@ -46,3 +46,28 @@ faqItems.forEach(item => {
   });
 
 
+  // ===navbar 
+
+let hamburger = document.querySelector('.hamburger');
+let nav = document.querySelector('.nav_bar');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('open_nav_bar'); // slide menu
+  hamburger.classList.toggle('active'); // toggle open/close icon
+}
+);
+// const navBar = document.getElementsByClassName("nav-menu");
+
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", function () {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  // Jab neeche scroll ho → menu hide
+  if (scrollTop > lastScrollTop) {
+      nav.classList.remove('open_nav_bar'); 
+    hamburger.classList.remove('active');
+  }
+  lastScrollTop = scrollTop;
+
+});
